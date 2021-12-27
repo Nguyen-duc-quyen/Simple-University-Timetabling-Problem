@@ -1,0 +1,35 @@
+Descriptions for tests used to validate models for solving the University Timetabling Problem
+
+Author: Nguyen Duc Quyen
+School: Hanoi University of Science and Technology
+Student ID: 20183617 
+Date: Saturday, December 25th, 2021
+
+Test 1 to test 10: logic tests 
+    The size of the problem in these tests is relatively small
+    These tests are used to check if your models' constraints are all correct
+    + Test1: multiple feasible solutions
+    + Test2: multiple feasible solutions (tight schedule)
+    + Test3: multiple feasible solutions (tight schedule)
+    + Test4: multiple feasible solutions
+    + Test5: multiple feasible solutions
+    + Test6: infeasible (too many slots for a teacher to cover in one week)
+    + Test7: infeasible (one course has the number of students exceeds the maximum capacity of the classrooms )
+    + Test8: infeasible (the credit for one course exceeds 11-maximum time_slot)
+    + Test9: infeasible (not enough room for covering all courses)
+    + Test10: multiple feasible solutions
+
+Test 11 to test 15: Perfomance tests 
+    The size of the problem increases as you test
+    A few conditions to match with real life circumstances:
+        + The minimum number of student: 20 (applied at HUST)
+        + The maximum number of student: 200 (applied at HUST)
+        + The number of credits for each course varies from 2-6 (applied at HUST)
+        + Two type of rooms: small room (max_capacity: 60), lecture hall (max_capacity: 200)
+        + A propotion of the classrooms are small ones, the others are lecture halls
+    + Test11: Num_courses: 20, Num_teacher: 10, Num_classrooms: 5, small_room_rate: 0.5
+    + Test12: Num_courses: 30, Num_teacher: 10, Num_classrooms: 5, small_room_rate: 0.5
+    + Test13: Num_courses: 30, Num_teacher: 10, Num_classrooms: 10, small_room_rate: 0.5
+    + Test14: Num_courses: 40, Num_teacher: 10, Num_classrooms: 10, small_room_rate: 0.5
+    + Test15: Num_courses: 50, Num_teacher: 10, Num_classrooms: 10, small_room_rate: 0.5
+    
